@@ -1,6 +1,6 @@
-package math.problems;
+   package math.problems;
 
-public class Fibonacci {
+   public class Fibonacci {
     public static void main(String[] args) {
          /*
           Write 40 Fibonacci numbers with java.
@@ -17,4 +17,4 @@ public class Fibonacci {
         }
 
 
-    
+
