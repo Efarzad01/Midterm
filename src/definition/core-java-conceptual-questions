@@ -8,6 +8,7 @@ A. Interactive Development Environment.
 What are the IDEs available in the market to support java?
 Explain the entire java life cycle.
 what is class?
+A.A class is a user defined blueprint or prototype from which objects are created.
 What is object?
 What is the entry point of an application?
 Why main is static?
