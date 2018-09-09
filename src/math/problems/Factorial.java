@@ -12,5 +12,23 @@ public class Factorial {
          *
          */
 
+        int n = 5;
+        int total = 1;
+        for (int i = 1; i <= n; i++) {
+            total = total * i;
+        }
+        System.out.println("The factorial of 5 is : " + total);
+
+    }
+
+    public static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
     }
 }
+
+
+
