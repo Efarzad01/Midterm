@@ -12,7 +12,7 @@ public class Factorial {
          *
          */
 
-        int n = 5;
+        int n = 4;
         int total = 1;
         for (int i = 1; i <= n; i++) {
             total = total * i;
