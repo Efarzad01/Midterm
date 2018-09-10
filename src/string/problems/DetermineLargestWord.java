@@ -26,13 +26,13 @@ public class DetermineLargestWord {
 
     }
 
-    public static Map<Integer, String> findTheLargestWord(String wordGiven){
+    public static Map<Integer, String> findTheLargestWord(String wordGiven) {
         Map<Integer, String> map = new HashMap<Integer, String>();
         String st = "";
         String[] split = wordGiven.split(" ");
 
-        for(int i=0;i<split.length;i++){
-            map.put(split[i].length(),split[i]);
+        for (int i = 0; i < split.length; i++) {
+            map.put(split[i].length(), split[i]);
         }
 
         return map;
