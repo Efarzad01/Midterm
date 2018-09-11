@@ -14,13 +14,13 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-    EmployeeInfo emp= new EmployeeInfo();
+    EmployeeInfo emp= new EmployeeInfo();// emp
 		emp.employeeId();
 		emp.assignDepartment();
 		emp.benefitLayout();
 		emp.calculateSalary();
 		emp.employeeName();
-		
+
 
 	}
 }
