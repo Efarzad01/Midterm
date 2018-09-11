@@ -14,7 +14,7 @@ public class FortuneEmployee {
 	 *
 	 **/
 	public static void main(String[] args) {
-    EmployeeInfo emp= new EmployeeInfo();// emp000
+    EmployeeInfo emp= new EmployeeInfo();// emp
 		emp.employeeId();
 		emp.assignDepartment();
 		emp.benefitLayout();
