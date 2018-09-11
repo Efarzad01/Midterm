@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class EmployeeInfo implements Employee {
 
- /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
- * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
- * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
- * go to FortuneEmployee class to apply all the fields and attributes.
- *
- * Important: YOU MUST USE the
- * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
- * Use all kind of keywords(super,this,static,final........)
- * Implement Nested class.
- * Use Exception Handling.
- *
- */
+	/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
+	 * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
+	 * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
+	 * go to FortuneEmployee class to apply all the fields and attributes.
+	 *
+	 * Important: YOU MUST USE the
+	 * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
+	 * Use all kind of keywords(super,this,static,final........)
+	 * Implement Nested class.
+	 * Use Exception Handling.
+	 *
+	 */
 
 	/*
 	 * declare few static and final fields and some non-static fields
@@ -37,12 +37,14 @@ public class EmployeeInfo implements Employee {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
-		this.employeeId=employeeId;
+	public void getemp(String name) {
+		this.name = name;
 	}
-    public EmployeeInfo(){
-		this.name=name;
-		this.employeeId=employeeId;
+
+
+	public void EmployeeInfo() {
+		this.name = name;
+		this.employeeId = employeeId;
 
 	}
 
@@ -54,14 +56,14 @@ public class EmployeeInfo implements Employee {
 	 * So you probably need to send 2 arguments.
 	 *
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
+	public static int calculateEmployeeBonus(int numberOfYearsWithCompany) {
 
-		if(numberOfYearsWithCompany>3){
-			bonus = salary*.1;
-		}else {
-			bonus =salary*.08;
+		if (numberOfYearsWithCompany > 3) {
+			bonus = salary * .1;
+		} else {
+			bonus = salary * .08;
 		}
-		int total=0;
+		int total = 0;
 		return total;
 	}
 
@@ -71,17 +73,17 @@ public class EmployeeInfo implements Employee {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 *
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
-		Scanner sc  = new Scanner(System.in);
+	public static int calculateEmployeePension() {
+		int total = 0;
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
 		System.out.println("Please enter today's date in format (example: August,2017): ");
 		String todaysDate = sc.nextLine();
-        String convertedJoiningDate = DateConversion.convertDate(joiningDate);
-        String convertedTodaysDate = DateConversion.convertDate(todaysDate);
+		String convertedJoiningDate = DateConversion.convertDate(joiningDate);
+		String convertedTodaysDate = DateConversion.convertDate(todaysDate);
 
-        //implement numbers of year from above two dates
+		//implement numbers of year from above two dates
 		//Calculate pension
 
 		return total;
@@ -89,16 +91,17 @@ public class EmployeeInfo implements Employee {
 
 	@Override
 	public int employeeId() {
-		this.employeeId=employeeId;
+		this.employeeId = 101;
 		System.out.println("employeeId :" + employeeId);
 		return employeeId;
 	}
 
 	@Override
 	public String employeeName() {
-		System.out.println("employee Name:"+ name);
+		this.getemp("Farzad");
+		System.out.println("employee Name:"+name);
 		return name;
-	}
+}
 
 	@Override
 	public void assignDepartment() {
